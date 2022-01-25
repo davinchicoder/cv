@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('kiit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .menu a:first-child {
+    color: MediumSeaGreen;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+}
+
+.menu {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section {}
+
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 2px pink;
+}
+
+section h1 {
+    margin: 35px 0px 30px 0px;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 1px 5px black;
+}
+
+section p {
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    word-spacing: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 20px;
+    outline: none;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+section .one {
+    background: MediumSeaGreen;
+    color: white;
+}
+
+section .two {
+    background: #FFFFF0;
+    color: black;
+}
+
+.change_content::after {
+    content: '';
+    animation: change_text 10s infinite linear;
+    color: aqua;
+}
+
+@keyframes change_text {
+    0% {
+        content: "ARIIA";
+    }
+    20% {
+        content: "RANKED";
+    }
+    40% {
+        content: "NO.1";
+    }
+    60% {
+        content: "NIRF";
+    }
+    80% {
+        content: "RANKED 21";
+    }
+    100% {
+        content: "CAMPUS LIFE OP";
+    }
+}
+
+.one :hover {
+    background: antiquewhite;
+    color: black;
+}
+
+.two:hover {
+    background: MediumSeaGreen;
+    color: white;
+}
